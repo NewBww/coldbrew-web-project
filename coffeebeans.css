@@ -1,0 +1,255 @@
+body {
+    background-color: #ffefd5;
+    font-family: serif , sans-serif;
+    padding: 0;
+    margin: 0;
+}
+p {
+    font-size: 1.5em;
+}
+#nav1 {
+    grid-area: nav1;
+}
+#nav2 {
+    grid-area: nav2;
+    border-top: #ddd solid 5px;
+}
+#nav3 {
+    grid-area: nav3;
+}
+#nav4 {
+    grid-area: nav4;
+}
+#nav5 {
+    grid-area: nav5;
+}
+.navbar-container {
+    display: grid;
+    grid-template-columns: [first] 15vw [line2] 14vw [line3] 14vw [line4] 14vw [line5] 14vw [line6] 15vw [end];
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 4;
+    grid-template-areas: ". nav1 nav2 nav3 nav4 nav5 .";
+}
+.navbar-container a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 4vh 0;
+    text-decoration: none;
+    font-family: "Julius Sans One";
+    font-weight: bold;
+    transition: all 0.4s linear;
+    overflow: hidden;
+}
+.navbar-container a:hover {
+    background-color: #ddd;
+    color: black;
+    transition: all 0.2s ease;
+}
+
+/*-------------------- Content --------------------*/
+
+.page-content {
+    z-index: 3;
+    position: relative;
+    margin: 0;
+    width: 100%;
+    background-color: white;
+}
+.container21{
+    display: flex;
+    flex-direction: column;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10.3vh;
+    height: 100vh;
+    width: 100%;
+    background: url("Resources/Paper.jpg") repeat-y;
+}
+.page-content .container21 h1{
+    font-family: florenbold;
+    font-size: 12vh;
+    color: orange;
+    text-align: center;
+    margin: 0;
+    padding-top: 1.8em;
+}
+.page-content .container21 h2 {
+    font-size: 12vh;
+    font-family: 'coffekanregular';
+    text-align: center;
+    position: relative;
+    margin: 0;
+    top: 2.4em;
+}
+#c2201{grid-area: c2201;}
+#c2202{grid-area: c2202; justify-self: center; z-index: 3}
+#c2203{grid-area: c2203;}
+#c2204{grid-area: c2204;}
+#c2205{grid-area: c2205;}
+#c2206{grid-area: c2206; justify-self: center; z-index: 3} #c2206 img{transition: all 0.3s ease; border-color: white;}
+#c2206 img:hover{
+    transform: scale(2);
+    border-color: white;
+    border-style: solid;
+    border-width: 45px 15px;
+    transition: all 0.5s ease;
+}
+#c2207{grid-area: c2207;}
+#c2208{grid-area: c2208;}
+#c2209{grid-area: c2209; justify-self: center; z-index: 3} #c2209 img{transition: all 0.3s ease; border-color: white;}
+#c2209 img:hover{
+    transform: scale(2);
+    border-color: white;
+    border-style: solid;
+    border-width: 45px 15px;
+    transition: all 0.5s ease;
+}
+#c2210{grid-area: c2210;}
+#c2211{grid-area: c2211;}
+#c2212{grid-area: c2212; justify-self: center; z-index: 3} #c2212 img{transition: all 0.3s ease; border-color: white;}
+#c2212 img:hover{
+    transform: scale(2);
+    border-color: white;
+    border-style: solid;
+    border-width: 45px 15px;
+    transition: all 0.5s ease;
+}
+#c2213{grid-area: c2213;}
+#c2214{grid-area: c2214;}
+#c2215{grid-area: c2215; justify-self: center; z-index: 3} #c2215 img{transition: all 0.3s ease; border-color: white;}
+#c2215 img:hover{
+    transform: scale(2);
+    border-color: white;
+    border-style: solid;
+    border-width: 45px 15px;
+    transition: all 0.5s ease;
+}
+#c2216{grid-area: c2216;}
+#c2217{grid-area: c2217; justify-self: center}
+#c2218{grid-area: c2218;}
+#c2219{grid-area: c2219; justify-self: center; z-index: 3} #c2219 img{transition: all 0.3s ease; border-color: white;}
+#c2219 img:hover{
+    transform: scale(2);
+    transition: all 0.5s ease;
+}
+#c2220{grid-area: c2220;}
+.container22 {
+    display: grid;
+    grid-template-columns: [first] minmax(5%,30%) [line1] auto [line2] minmax(5%,30%) [end];
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". c2201 ."
+        ". c2202 ."
+        ". c2203 ."
+        ". c2204 ."
+        ". c2205 ."
+        ". c2206 ."
+        ". c2207 ."
+        ". c2208 ."
+        ". c2209 ."
+        ". c2210 ."
+        ". c2211 ."
+        ". c2212 ."
+        ". c2213 ."
+        ". c2214 ."
+        ". c2215 ."
+        ". c2216 ."
+        ". c2217 ."
+        ". c2218 ."
+        ". c2219 ."
+        ". c2220 .";
+    background-color: papayawhip;
+    width: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    padding: 6em 0 6em 0;
+}
+.page-content .container22 h2{
+    top: 30%;
+    font-family: "Kanit";
+    margin: 0 0 1em 0;
+    font-size: 3em;
+}
+.page-content .container22 h3{
+    font-family: "Kanit";
+    font-size: 2em;
+    margin-top: 3em;
+}
+.page-content .container22 h4{
+    font-family: "Kanit";
+    font-size: 1.5em;
+    margin-top: 2em;
+}
+.page-content .container22 img{
+    margin-bottom: 1em;
+}
+.page-content .container22 p {
+    font-family: "Kanit";
+    line-height: 2;
+    padding-bottom: 1em;
+    z-index: 2;
+}
+#c2218 {
+    font-family: "Kanit";
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #fce7c2;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 3em;
+}
+#c2218 td, #customers th {
+    border: 1px solid #fce7c2;
+    padding: 8px;
+}
+
+#c2218 tr:nth-child(even){
+    background-color: rgba(255,255,255,0.3);
+}
+#c2218 tr:nth-of-type(1){
+    background-color: #fce7c2;
+}
+#c2218 tr:hover {
+    background-color: rgba(219, 226, 236, 0.5);
+}
+#c2218 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: black;
+    /*border: 1px solid #fce7c2;*/
+}
+
+
+.entered2 {
+    -webkit-animation: fade-in-bottom 1s ease-in 0.5s both;
+    animation: fade-in-bottom 1s ease-in 0.5s both;
+}
+@-webkit-keyframes fade-in-bottom {
+    0% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-in-bottom {
+    0% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
